@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="20dp" /> <!-- Ajusta el radio para cambiar la cantidad de redondez -->
+    <solid android:color="#d3d3d3" /> <!-- Color de fondo del SearchView -->
+</shape>
