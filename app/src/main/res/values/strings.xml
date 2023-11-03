@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Delicio</string>
+    <string name="app_name">Catafy</string>
+    <string name="catalogo">CATÁLOGO</string>
+    <string name="blurrybg">BLURRYBG</string>
 </resources>
