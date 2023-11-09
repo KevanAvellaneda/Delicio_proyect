@@ -20,8 +20,8 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    "proguard-rules.pro"
             )
         }
     }
@@ -31,8 +31,13 @@ android {
     }
 }
 
-dependencies {
+repositories {
+    google()
+    jcenter()
+    maven("https://jitpack.io") // Agrega esta línea
+}
 
+dependencies {
     implementation("androidx.appcompat:appcompat:1.5.1")
     implementation("com.google.android.material:material:1.8.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -43,4 +48,5 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     implementation("com.etebarian:meow-bottom-navigation:1.2.0")
+    implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
 }

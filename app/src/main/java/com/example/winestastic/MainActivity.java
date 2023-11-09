@@ -8,7 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+
+import java.util.ArrayList;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -176,5 +181,18 @@ public class MainActivity extends AppCompatActivity {
                 return null;
             }
         });
+
+        ArrayList<SlideModel> imageList = new ArrayList<>();
+
+// imageList.add(new SlideModel("String Url" or R.drawable)
+// imageList.add(new SlideModel("String Url" or R.drawable, "title") You can add title
+
+        imageList.add(new SlideModel(R.drawable.vinoqueso, "The animal population decreased by 58 percent in 42 years.", ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel(R.drawable.vino, "Elephants and tigers may become extinct.", ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel(R.drawable.vinedos, "And people do that.", ScaleTypes.CENTER_CROP));
+
+        ImageSlider imageSlider = findViewById(R.id.image_slider);
+        imageSlider.setImageList(imageList);
+
     }
 }

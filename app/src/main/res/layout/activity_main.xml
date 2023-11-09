@@ -20,6 +20,16 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="-30dp" />
 
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="1000"
+            app:iss_delay="1000"
+            app:iss_text_align="CENTER"/>
+
+
         <EditText
             android:id="@+id/editTextText2"
             android:layout_width="159dp"
@@ -30,6 +40,7 @@
             android:background="@drawable/rounded_rectangle"
             android:ems="10"
             android:fontFamily="@font/bebas_regular"
+            android:gravity="center"
             android:inputType="text"
             android:padding="16dp"
             android:text="@string/catalogo"
@@ -37,10 +48,11 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.563"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline2"
+            app:layout_constraintVertical_bias="0.562"
             tools:ignore="LabelFor,MissingConstraints" />
-
 
         <HorizontalScrollView
             android:id="@+id/horizontalScrollView"
@@ -171,11 +183,48 @@
             android:inputType="text"
             android:padding="16dp"
             android:text="Eventos"
+            android:gravity="center"
             android:textColor="#000000"
             android:textSize="24sp"
             tools:ignore="LabelFor,MissingConstraints"
             tools:layout_editor_absoluteX="146dp"
             tools:layout_editor_absoluteY="337dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/guideline5"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            android:scrollbars="none"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- Aquí puedes agregar elementos, como imágenes o vistas, que se desplazarán horizontalmente -->
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/winead2" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/winead4" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/winead5" />
+
+                <!-- Puedes agregar más elementos aquí -->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline2"
@@ -197,6 +246,20 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="315dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="440dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="530dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
