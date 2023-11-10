@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashWinestastic"
-    android:background="@drawable/splashscreen">
+    android:background="@drawable/splashbg">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/icon"
+        android:contentDescription="@string/iconosplash" />
 </RelativeLayout>
