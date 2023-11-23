@@ -197,12 +197,15 @@ public class MainActivity extends AppCompatActivity {
         ImageSlider imageSlider = findViewById(R.id.image_slider);
         imageSlider.setImageList(imageListCat);
 
-        /*imageListEve.add(new SlideModel(R.drawable.winead2, ScaleTypes.FIT));
+
+
+        imageListEve.add(new SlideModel(R.drawable.winead2, ScaleTypes.FIT));
         imageListEve.add(new SlideModel(R.drawable.winead4, ScaleTypes.FIT));
         imageListEve.add(new SlideModel(R.drawable.winead5, ScaleTypes.FIT));
 
         ImageSlider imageSlider2 = findViewById(R.id.image_slider2);
-        imageSlider.setImageList(imageListEve);*/
+        imageSlider2.setImageList(imageListEve);
+
 
     }
 }

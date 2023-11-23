@@ -343,6 +343,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottomNavigation"
+        android:background="#a01c5c"
         android:visibility="visible">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -350,7 +351,7 @@
             android:layout_height="match_parent">
 
 
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -358,46 +359,21 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/blurrybg"
                 tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="-26dp" />
+                tools:layout_editor_absoluteY="-26dp" />-->
 
-            <EditText
-                android:id="@+id/editTextText2"
-                android:layout_width="159dp"
-                android:layout_height="58dp"
+            <TextView
+                android:id="@+id/textCatalogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:autofillHints=""
-                android:background="@drawable/rounded_rectangle"
-                android:ems="10"
+                android:layout_marginTop="16dp"
                 android:fontFamily="@font/bebas_regular"
-                android:gravity="center"
-                android:inputType="text"
-                android:padding="16dp"
                 android:text="Catalogo"
                 android:textColor="#000000"
-                android:textSize="24sp"
-                tools:ignore="LabelFor,MissingConstraints"
-                tools:layout_editor_absoluteX="128dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <EditText
-                android:id="@+id/editTextText3"
-                android:layout_width="155dp"
-                android:layout_height="56dp"
-                android:layout_gravity="center"
-                android:layout_margin="8dp"
-                android:autofillHints=""
-                android:background="@drawable/rounded_rectangle"
-                android:ems="10"
-                android:fontFamily="@font/bebas_regular"
-                android:gravity="center"
-                android:inputType="text"
-                android:padding="16dp"
-                android:text="Eventos"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                tools:ignore="LabelFor,MissingConstraints"
-                tools:layout_editor_absoluteX="132dp"
-                tools:layout_editor_absoluteY="355dp" />
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline2"
@@ -436,39 +412,45 @@
 
             <com.denzcoskun.imageslider.ImageSlider
                 android:id="@+id/image_slider"
-                android:layout_width="235dp"
+                android:layout_width="250dp"
                 android:layout_height="194dp"
-                android:layout_marginStart="41dp"
                 app:iss_auto_cycle="true"
                 app:iss_delay="1000"
                 app:iss_period="1000"
                 app:iss_text_align="CENTER"
-                app:layout_constraintBottom_toTopOf="@+id/editTextText3"
+                app:layout_constraintBottom_toTopOf="@+id/textEventos"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.348"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText2"
-                app:layout_constraintVertical_bias="0.363">
-
-            </com.denzcoskun.imageslider.ImageSlider>
+                app:layout_constraintTop_toBottomOf="@+id/textCatalogo"
+                app:layout_constraintVertical_bias="0.363" />
 
             <com.denzcoskun.imageslider.ImageSlider
                 android:id="@+id/image_slider2"
-                android:layout_width="234dp"
+                android:layout_width="250dp"
                 android:layout_height="214dp"
-                android:layout_marginEnd="16dp"
                 app:iss_auto_cycle="true"
                 app:iss_delay="1000"
                 app:iss_period="1000"
                 app:iss_text_align="CENTER"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.552"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText3"
-                app:layout_constraintVertical_bias="0.529">
+                app:layout_constraintTop_toBottomOf="@+id/textEventos"
+                app:layout_constraintVertical_bias="0.529" />
 
-            </com.denzcoskun.imageslider.ImageSlider>
+            <TextView
+                android:id="@+id/textEventos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/bebas_regular"
+                android:text="Eventos"
+                android:textColor="#000000"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
