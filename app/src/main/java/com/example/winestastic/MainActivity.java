@@ -182,17 +182,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ArrayList<SlideModel> imageList = new ArrayList<>();
+        ArrayList<SlideModel> imageListCat = new ArrayList<>();
+        ArrayList<SlideModel> imageListEve = new ArrayList<>();
+
 
 // imageList.add(new SlideModel("String Url" or R.drawable)
 // imageList.add(new SlideModel("String Url" or R.drawable, "title") You can add title
 
-        imageList.add(new SlideModel(R.drawable.vinoqueso, "The animal population decreased by 58 percent in 42 years.", ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel(R.drawable.vino, "Elephants and tigers may become extinct.", ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel(R.drawable.vinedos, "And people do that.", ScaleTypes.CENTER_CROP));
+        imageListCat.add(new SlideModel(R.drawable.vino, "Cata de vinos", ScaleTypes.CENTER_INSIDE));
+        imageListCat.add(new SlideModel(R.drawable.barril, "Vinos", ScaleTypes.CENTER_INSIDE));
+        imageListCat.add(new SlideModel(R.drawable.vinoqueso, "Para acompañar", ScaleTypes.CENTER_INSIDE));
+        imageListCat.add(new SlideModel(R.drawable.vinedos, "Viñedos", ScaleTypes.CENTER_INSIDE));
 
         ImageSlider imageSlider = findViewById(R.id.image_slider);
-        imageSlider.setImageList(imageList);
+        imageSlider.setImageList(imageListCat);
+
+        /*imageListEve.add(new SlideModel(R.drawable.winead2, ScaleTypes.FIT));
+        imageListEve.add(new SlideModel(R.drawable.winead4, ScaleTypes.FIT));
+        imageListEve.add(new SlideModel(R.drawable.winead5, ScaleTypes.FIT));
+
+        ImageSlider imageSlider2 = findViewById(R.id.image_slider2);
+        imageSlider.setImageList(imageListEve);*/
 
     }
 }
