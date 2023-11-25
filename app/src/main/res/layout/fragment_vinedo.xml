@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vinedo">
+
+    <!-- Layout for 'menu' -->
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation"
+        android:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Add your views for the 'menu' layout here -->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    <!-- Layout for 'home' -->
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation"
+        android:background="#a01c5c"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Add your views for the 'home' layout here -->
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="76dp" />
+
+            <!-- Rectángulo blanco con esquinas redondeadas -->
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="353dp" />
+
+            <View
+                android:id="@+id/rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/guideline7"
+                android:layout_alignEnd="@id/guideline8"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="680dp"
+                android:background="@drawable/rounded_rectangle"
+                android:clipToOutline="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintHeight_percent="50"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="80"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:ignore="UnusedAttribute" />
+
+            <View
+                android:id="@+id/circle"
+                android:layout_width="276dp"
+                android:layout_height="209dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_shape"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-154dp"
+                tools:layout_editor_absoluteY="-122dp" />
+
+            <View
+                android:id="@+id/circle2"
+                android:layout_width="275dp"
+                android:layout_height="415dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_shape"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="268dp"
+                tools:layout_editor_absoluteY="731dp" />
+
+            <View
+                android:id="@+id/circle3"
+                android:layout_width="120dp"
+                android:layout_height="238dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_shape"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-59dp"
+                tools:layout_editor_absoluteY="365dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="190dp"
+                android:layout_height="211dp"
+                android:src="@drawable/vpruebs"
+                app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                app:layout_constraintHorizontal_bias="0.595"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                app:layout_constraintVertical_bias="0.428" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="127dp"
+                android:layout_height="36dp"
+                android:text="Nombre Viñedo"
+                android:textSize="23sp"
+                app:fontFamily="@font/bebas_regular"
+                app:layout_constraintBottom_toTopOf="@+id/guideline11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintStart_toStartOf="@+id/guideline8"
+                app:layout_constraintTop_toTopOf="@+id/guideline9"
+                app:layout_constraintVertical_bias="0.375" />
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="127dp"
+                android:layout_height="36dp"
+                android:text="Reseñas"
+                android:textSize="23sp"
+                app:fontFamily="@font/bebas_regular"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="418dp"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="232dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="0dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="118dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="134dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="32dp"
+                android:text="Descripcion del vinedo"
+                app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.244"
+                app:layout_constraintStart_toStartOf="@+id/guideline8"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                tools:ignore="MissingConstraints" />
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="339dp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    <!-- Layout for 'map' -->
+    <RelativeLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation"
+        android:visibility="gone">
+        <!-- Add your views for the 'map' layout here -->
+    </RelativeLayout>
+
+    <!-- Bottom Navigation -->
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mbn_circleColor="#B13660"
+        android:background="#B13660"
+        app:mbn_backgroundBottomColor="#F3853455"
+        app:mbn_countBackgroundColor="#853455"
+        app:mbn_countTextColor="#ffffff"
+        app:mbn_defaultIconColor="#FFFFFF"
+        app:mbn_rippleColor="#853455"
+        app:mbn_selectedIconColor="#FFFFFF"
+        app:mbn_shadowColor="#1f212121"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
