@@ -26,12 +26,12 @@
                     android:id="@+id/vinedoImg"
                     android:layout_width="425dp"
                     android:layout_height="280dp"
-                    android:src="@tools:sample/avatars"
+                    android:src="@drawable/laredonda"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.428"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/laredonda" />
+                     />
 
                 <View
                     android:id="@+id/view2"
@@ -50,10 +50,10 @@
                     android:layout_height="36dp"
                     android:layout_marginStart="32dp"
                     android:layout_marginBottom="65dp"
-                    android:src="@tools:sample/avatars"
+                    android:src="@drawable/ubicacion"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:srcCompat="@drawable/ubicacion" />
+                    />
 
                 <TextView
                     android:id="@+id/titleText"
@@ -149,7 +149,9 @@ Explora la magia de Viñedo La Redonda en Querétaro, México. Rodeado de exuber
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="vertical">
+
+            </LinearLayout>
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -161,9 +163,8 @@ Explora la magia de Viñedo La Redonda en Querétaro, México. Rodeado de exuber
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <!-- Opinión 1 -->
                     <TextView
-                        android:id="@+id/descripcion2"
+                        android:id="@+id/opinion"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
@@ -172,6 +173,22 @@ Explora la magia de Viñedo La Redonda en Querétaro, México. Rodeado de exuber
                         android:textColor="@color/white"
                         android:textSize="25sp"
                         android:textStyle="bold" />
+
+
+                    <ListView
+                        android:id="@android:id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="104dp"
+                        android:layout_margin="0dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:background="#4DFFFFFF"
+                        android:divider="#853455"
+                        android:dividerHeight="1dp"
+                        android:padding="8dp"
+                        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb">
+
+                    </ListView>
 
                 </LinearLayout>
             </ScrollView>

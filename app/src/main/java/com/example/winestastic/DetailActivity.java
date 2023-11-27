@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.ArrayAdapter;
+
+
 //import domain.Item;
 
 public class DetailActivity extends AppCompatActivity {
@@ -21,6 +25,15 @@ public class DetailActivity extends AppCompatActivity {
 
         initView();
         setVariable();
+        ListView listView = findViewById(android.R.id.list);
+        // Datos a mostrar en la lista
+        String[] datos = {"Item 1", "Item 48", "Item 3", "Item 4", "Item 5", "Nuevo Item"};
+
+        // Crear un ArrayAdapter
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datos);
+
+        // Establecer el adaptador en la ListView
+        listView.setAdapter(adapter);
     }
 
     private void setVariable(){
